@@ -1,0 +1,51 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jaeger-deployment
+  labels:
+    app: jaeger
+spec: 
+  replicas: 1
+  selector:
+    matchLabels:
+      app: jaeger
+  template:
+    metadata:
+      labels:
+        app: jaeger
+    spec:
+      containers:
+      - name: jaeger
+        image: jaegertracing/all-in-one:latest
+        env:
+          - name: COLLECTOR_ZIPKIN_HTTP_PORT
+            value: "9411"
+        ports:
+          - name: port1
+            protocol: TCP
+            containerPort: 5778
+            hostPort: 5778
+          - name: port2
+            protocol: UDP
+            containerPort: 6832
+            hostPort: 6832
+          - name: port3
+            protocol: UDP
+            containerPort: 6831 
+            hostPort: 6831
+          - name: port4
+            protocol: UDP
+            containerPort: 5775
+            hostPort: 5775
+          - name: port5
+            protocol: TCP
+            containerPort: 9411
+            hostPort: 9411
+          - name: port6
+            protocol: TCP
+            containerPort: 14268
+            hostPort: 14268
+          - name: port7
+            protocol: TCP
+            containerPort: 16686 
+            hostPort: 16686 

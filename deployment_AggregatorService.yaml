@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: aggregatorservice-deployment
+  labels:
+    app: aggregatorservice
+spec: 
+  replicas: 3
+  selector: 
+    matchLabels: 
+      app: aggregatorservice
+  template:
+    metadata:
+      labels:
+        app: aggregatorservice
+    spec:
+      containers:
+      - name: aggregatorservice
+        image: piyushaggarwal02/piyushaggarwal_3147205_microservices2_assignment2:aggregatorservice
+        env:
+          - name: USERSERVICE_URL
+            valueFrom: 
+              configMapKeyRef:
+                name: special-config
+                key: userEnvKey
+          - name: ORDERSERVICE_URL
+            valueFrom: 
+              configMapKeyRef:
+                name: special-config
+                key: orderEnvKey
+          - name: JAEGERUI
+            value: "jaeger-deployment-f8kkh"
+        ports:
+        - containerPort: 80

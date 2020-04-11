@@ -1,0 +1,16 @@
+E:\NAGP\Microservices2Assignment1\Microservices2Assignment1\Common\bin\Debug\netstandard2.0\Common.deps.json
+E:\NAGP\Microservices2Assignment1\Microservices2Assignment1\Common\bin\Debug\netstandard2.0\Common.dll
+E:\NAGP\Microservices2Assignment1\Microservices2Assignment1\Common\bin\Debug\netstandard2.0\Common.pdb
+E:\NAGP\Microservices2Assignment1\Microservices2Assignment1\Common\obj\Debug\netstandard2.0\Common.csprojAssemblyReference.cache
+E:\NAGP\Microservices2Assignment1\Microservices2Assignment1\Common\obj\Debug\netstandard2.0\Common.AssemblyInfoInputs.cache
+E:\NAGP\Microservices2Assignment1\Microservices2Assignment1\Common\obj\Debug\netstandard2.0\Common.AssemblyInfo.cs
+E:\NAGP\Microservices2Assignment1\Microservices2Assignment1\Common\obj\Debug\netstandard2.0\Common.dll
+E:\NAGP\Microservices2Assignment1\Microservices2Assignment1\Common\obj\Debug\netstandard2.0\Common.pdb
+E:\NAGP\jaegar\Microservices2Assignment1\Common\bin\Debug\netstandard2.0\Common.deps.json
+E:\NAGP\jaegar\Microservices2Assignment1\Common\bin\Debug\netstandard2.0\Common.dll
+E:\NAGP\jaegar\Microservices2Assignment1\Common\bin\Debug\netstandard2.0\Common.pdb
+E:\NAGP\jaegar\Microservices2Assignment1\Common\obj\Debug\netstandard2.0\Common.csprojAssemblyReference.cache
+E:\NAGP\jaegar\Microservices2Assignment1\Common\obj\Debug\netstandard2.0\Common.AssemblyInfoInputs.cache
+E:\NAGP\jaegar\Microservices2Assignment1\Common\obj\Debug\netstandard2.0\Common.AssemblyInfo.cs
+E:\NAGP\jaegar\Microservices2Assignment1\Common\obj\Debug\netstandard2.0\Common.dll
+E:\NAGP\jaegar\Microservices2Assignment1\Common\obj\Debug\netstandard2.0\Common.pdb

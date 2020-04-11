@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orderservice-deployment
+  labels:
+    app: orderservice
+spec: 
+  replicas: 3
+  selector: 
+    matchLabels: 
+      app: orderservice
+  template:
+    metadata:
+      labels:
+        app: orderservice
+    spec:
+      containers:
+      - name: orderservice
+        image: piyushaggarwal02/piyushaggarwal_3147205_microservices2_assignment2:orderservice
+        env:
+          - name: JAEGERUI
+            value: "jaeger-deployment-f8kkh"
+        ports:
+        - containerPort: 80

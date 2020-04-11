@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: userservice-deployment
+  labels:
+    app: userservice
+spec: 
+  replicas: 3
+  selector:
+    matchLabels:
+      app: userservice
+  template:
+    metadata:
+      labels:
+        app: userservice
+    spec:
+      containers:
+      - name: userservice
+        image: piyushaggarwal02/piyushaggarwal_3147205_microservices2_assignment2:userservice
+        env:
+          - name: JAEGERUI
+            value: jaeger-deployment-f8kkh
+        ports:
+        - containerPort: 80
